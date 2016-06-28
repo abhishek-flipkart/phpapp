@@ -6,7 +6,9 @@
     cursor.style.backgroundColor = "#000";
     cursor.style.position = 'absolute';
     d.getElementsByTagName('body')[0].appendChild(cursor);
-    d.addEventListener('mousemove',function(){
+    d.addEventListener('mousemove',function(e){
+        cursor.style.top = e.clientY - 20;
+        cursor.style.left = e.clientY - 20;
         console.log("Moving");
     })
 })(document);
