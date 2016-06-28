@@ -10,6 +10,14 @@
     
     function traverseElement(elem) {
         console.log(elem);
+        var children = elem.children,
+            countChildren = elem.childElementCount;
+        
+        for(var i = 0; i < countChildren; i++) {
+            var classes = children[i].classList,
+                insertBeforeClass = 'pu-price';
+            console.log(classes.indexOf(insertBeforeClass));
+        }
     }
     
 })(document);
