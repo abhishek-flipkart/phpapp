@@ -4,6 +4,12 @@
     var products = doc.getElementsByClassName('pu-details'),
         productCount = products.length;
     
-    console.log(productCount);
+    for(var i = 0; i < productCount; i++) {
+        traverseElement(products[i]);
+    }
+    
+    function traverseElement(elem) {
+        console.log(elem);
+    }
     
 })(document);
