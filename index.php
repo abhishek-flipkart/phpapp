@@ -4,7 +4,7 @@
         <title>A bookmark apoplication</title>
     </head>
     <body>
-        <a href="javascript:void((function(d){console.log(d)})(document))">Bookmark</a>
+        <a href="javascript:void((function(d){var spyerID = d.getElementById('spyer');console.log(spyerID);})(document))">Bookmark</a>
     </body>
 </html>
 
