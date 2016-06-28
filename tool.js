@@ -1,12 +1,9 @@
 (function(doc){
     'use strict';
     
-    var products = doc.getElementsByClassName('product-unit'),
+    var products = doc.getElementsByClassName('pu-details'),
         productCount = products.length;
-    for (var i = 0 ; i < productCount ; i++) {
-        console.log("---------------------");
-        var childrenCount = products[i].childElementCount;
-        //console.log(products[i].children);
-        console.log(childrenCount);
-    }
+    
+    console.log(productCount);
+    
 })(document);
