@@ -10,7 +10,7 @@
     })
     
     function moveImages(xpos,ypos) {
-        for (var i = 0 ,i < imageCount;i++) {
+        for (var i = 0 ;i < imageCount;i++) {
             images[i].style.position = 'absolute';
             images[i].style.top = ypos;
             images[i].style.left = xpos;
