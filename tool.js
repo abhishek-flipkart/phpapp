@@ -1,4 +1,6 @@
 (function(d){
     'use strict';
-    alert(d);
+    d.addEventListener('mousemove',function(){
+        console.log("Moving");
+    })
 })(document);
