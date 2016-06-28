@@ -1,5 +1,7 @@
-(function(d){
+(function(doc){
     'use strict';
-    var products = d.getElementsByClassName('product-unit');
-    console.log(products.length);
+    var pageLocation = doc.getElementsByTagName('body');
+    
+    //var products = doc.getElementsByClassName('product-unit');
+    console.log(pageLocation);
 })(document);
