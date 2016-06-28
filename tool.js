@@ -5,6 +5,8 @@
         productCount = products.length;
     for (var i = 0 ; i < productCount ; i++) {
         console.log("---------------------");
-        console.log(products[i].children);
+        var childrenCount = products[i].childElementCount;
+        //console.log(products[i].children);
+        console.log(childrenCount);
     }
 })(document);
