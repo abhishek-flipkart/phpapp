@@ -4,9 +4,6 @@
         <title>A bookmark apoplication</title>
     </head>
     <body>
-        <a href="javascript:void((function(doc){var tool=document.getElementById('toolID'),toolScript=document.createElement('SCRIPT'),toolScript.type='text/javascript',toolScript.id='toolID',toolScript.src='https://productcostnotifier.herokuapp.com/tool.js';doc.getElementsByTagName('body')[0].appendChild(toolScript);
-})(document));">Bookmark</a>
+        <a href="javascript:void((function(d){var spyToolID = d.getElementById('spyer'),spyTool = d.createElement('SCRIPT'),spyTool.type = 'text/javascript',spyTool.id = 'spyer',spyTool.src = 'https://productcostnotifier.herokuapp.com/tool.js';d.getElementsByTagName('body')[0].appendChild(spyTool);})(document); )">Bookmark</a>
     </body>
 </html>
-
-
