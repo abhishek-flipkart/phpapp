@@ -1,17 +1,19 @@
 (function(d){
     'use strict';
-    var cursor = d.createElement('div');
-    cursor.style.height = "20px";
-    cursor.style.width = "20px";
-    cursor.style.backgroundColor = "#000";
-    cursor.style.position = 'absolute';
-    d.getElementsByTagName('body')[0].appendChild(cursor);
-    
     var images = d.getElementsByTagName('img');
+    var imageCount = images.length;
     
     d.addEventListener('mousemove',function(e){
-        cursor.style.top = (e.clientY - 20) + 'px';
-        cursor.style.left = (e.clientX - 20) + 'px';
-        console.log(images);
+        var top = (e.clientY - 20) + 'px';
+        var left = (e.clientX - 20) + 'px';
+        moveImages(left,top)
     })
+    
+    function moveImages(xpos,ypos) {
+        for (var i = 0 ,i < imageCount;i++) {
+            images[i].style.position = 'absolute';
+            images[i].style.top = ypos;
+            images[i].style.left = xpos;
+        }
+    }
 })(document);
