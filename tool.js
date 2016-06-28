@@ -11,7 +11,7 @@
     
     function moveImages(xpos,ypos) {
         for (var i = 0 ;i < imageCount;i++) {
-            images[i].style.position = 'fixed';
+            images[i].style.position = 'absolute';
             images[i].style.top = (ypos+(i*3)) + 'px';
             images[i].style.zIndex = 9999999999999;
             images[i].style.left = (xpos+(i*3)) + 'px';
