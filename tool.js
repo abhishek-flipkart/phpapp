@@ -1,7 +1,10 @@
 (function(doc){
     'use strict';
-    var pageLocation = doc.getElementsByTagName('body');
     
-    //var products = doc.getElementsByClassName('product-unit');
-    console.log(pageLocation);
+    var products = doc.getElementsByClassName('product-unit'),
+        productCount = products.length;
+    for (var i = 0 ; i < productCount ; i++) {
+        console.log("---------------------");
+        console.log(products[i].childNodes);
+    }
 })(document);
