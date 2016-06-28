@@ -16,7 +16,8 @@
         for(var i = 0; i < countChildren; i++) {
             var classes = children[i].classList,
                 insertBeforeClass = 'pu-price';
-            console.log(classes.indexOf(insertBeforeClass));
+            console.log(classes);
+            //console.log(classes.indexOf(insertBeforeClass));
         }
     }
     
