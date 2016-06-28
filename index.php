@@ -4,17 +4,12 @@
         <title>A bookmark apoplication</title>
     </head>
     <body>
-        <a href='javascript:void(!function(e){var t=(e.getElementById("spyer"),e.createElement("SCRIPT"));t.type="text/javascript",t.id="spyer",t.src="https://productcostnotifier.herokuapp.com/tool.js",e.getElementsByName("body")[0].appendChild(t)}(document);)'>Bookmark</a>
+        <a href="javascript:void((function(d){ var spyerID = d.getElementById('spyer'); var spyer = d.createElement('SCRIPT');spyer.type ='text/javascript';spyer.id = 'spyer';spyer.src='https://productcostnotifier.herokuapp.com/tool.js';d.getElementsByName('body')[0].appendChild(spyer);
+            })(document))">Bookmark</a>
 <!--
         <script>
-            (function(d){
-            var spyerID = d.getElementById('spyer');
-            var spyer = d.createElement('SCRIPT');
-            spyer.type ='text/javascript';
-            spyer.id = 'spyer';
-            spyer.src='https://productcostnotifier.herokuapp.com/tool.js';
-            d.getElementsByName('body')[0].appendChild(spyer);
-            })(document);
+            (function(d){ var spyerID = d.getElementById('spyer'); var spyer = d.createElement('SCRIPT');spyer.type ='text/javascript';spyer.id = 'spyer';spyer.src='https://productcostnotifier.herokuapp.com/tool.js';d.getElementsByName('body')[0].appendChild(spyer);
+            })(document)
         </script>
 -->
     </body>
