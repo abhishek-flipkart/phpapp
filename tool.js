@@ -1,1 +1,4 @@
-alert("Hello");
+(function(d){
+    'use strict';
+    alert(d);
+})(document);
