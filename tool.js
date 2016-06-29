@@ -1,3 +1,8 @@
+/*
+* Track product price 
+* @author Abhishek Panda
+* @date 28th June,2016
+*/
 (function(doc){
     'use strict';
     
