@@ -18,7 +18,7 @@
                 insertBeforeClass = 'pu-price';
             console.log(typeof classes);
             console.log(classes);
-            console.log(classes.indexOf(insertBeforeClass));
+            //console.log(classes.indexOf(insertBeforeClass));
         }
     }
     
