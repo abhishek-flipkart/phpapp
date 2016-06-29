@@ -9,18 +9,21 @@
     }
     
     function _traverseElement(elem) {
-        console.log(elem);
+        
         var children = elem.children,
-            countChildren = elem.childElementCount;
+            countChildren = elem.childElementCount,
+            insertPosition = undefined;
         
         for(var i = 0; i < countChildren; i++) {
             var classes = children[i].classList,
                 insertBeforeClass = 'pu-price';
             if(classes.contains(insertBeforeClass)) {
-                elem.insertBefore(_createElement(), children[i]);
-                console.log(classes);
+                insertPosition =  children[i];
             }
         }
+        
+        if(insertPosition != undefined)
+            elem.insertBefore(_createElement(), insertPosition);
     }
     
     function _createElement() {
