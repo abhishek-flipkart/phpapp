@@ -18,7 +18,7 @@
                 insertBeforeClass = 'pu-price';
             if(classes.contains(insertBeforeClass)) {
                 //elem.insertBefore(_createElement(), children[i]);
-                console.log("added here");
+                console.log(classes);
             }
         }
     }
