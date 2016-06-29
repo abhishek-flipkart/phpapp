@@ -5,10 +5,10 @@
         productCount = products.length;
     
     for(var i = 0; i < productCount; i++) {
-        traverseElement(products[i]);
+        _traverseElement(products[i]);
     }
     
-    function traverseElement(elem) {
+    function _traverseElement(elem) {
         console.log(elem);
         var children = elem.children,
             countChildren = elem.childElementCount;
@@ -17,9 +17,22 @@
             var classes = children[i].classList,
                 insertBeforeClass = 'pu-price';
             if(classes.contains(insertBeforeClass)) {
-                console.log("Need to insert new element");
+                elem.insertBefore(_createElement(), children[i]);
             }
         }
+    }
+    
+    function _createElement() {
+        var element = doc.createElement('div');
+        var text = doc.createTextNode('SpyIT');
+        element.appendChild(text);
+        element.style.height = "20px";
+        element.style.width = "100px";
+        element.style.backgroundColor = "#609";
+        element.style.color = "#FFF";
+        element.style.fontSize = "10px";
+        element.style.fontWeight = "bold";
+        return element;
     }
     
 })(document);
