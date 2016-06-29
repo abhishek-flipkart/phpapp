@@ -16,10 +16,9 @@
         for(var i = 0; i < countChildren; i++) {
             var classes = children[i].classList,
                 insertBeforeClass = 'pu-price';
-            console.log(typeof classes);
-            console.log(classes);
-            console.log(classes.contains(insertBeforeClass));
-            //console.log(classes.indexOf(insertBeforeClass));
+            if(classes.contains(insertBeforeClass)) {
+                console.log("Need to insert new element");
+            }
         }
     }
     
